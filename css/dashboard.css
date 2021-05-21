@@ -1,0 +1,507 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Glyphicons for Bootstrap
+ *
+ *  Glyphicons icon font path and style overrides
+ *
+ *  Version: 1.0
+ *  Latest update: May 25, 2015
+ *
+
+/* ------------------------------------------------------------------------------
+*
+*  # Scaffolding
+*
+*  Overrides for bootstrap scaffolding
+*
+*  Version: 1.1
+*  Latest update: Nov 25, 2015
+*
+* ---------------------------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+
+}
+a {
+  cursor: pointer;
+}
+a:focus {
+  outline: 0;
+}
+.row{
+  padding: 0;
+  margin: 0;
+}
+
+.fas{
+  color: #26A69A;
+}
+.navigation li a i{
+  color: #f6f5f5;
+} 
+
+/*logo*/
+.logo img{
+  margin:  auto;
+  text-align: center;
+  width:100px;
+  height: 59px;
+  border-radius: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------
+*
+*  # Navbar component
+*
+*  Overrides for navbar bootstrap component
+*
+*  Version: 1.2
+*  Latest update: Dec 2, 2015
+*
+* ---------------------------------------------------------------------------- */
+
+
+.heading h1{
+  color: #26A69A;
+    font-weight: 500;
+    margin: 0px;
+   text-align: center;
+  -webkit-animation: blink 12s infinite;
+  
+
+}
+.download {
+  float: ;
+}
+.download a i{
+  color: #f6f5f5;
+  font-size: 50px;
+}
+.mobile-download a i{
+  display: none;
+
+}
+@media (max-width: 769px){
+  .heading h1{
+    margin-right: 0;
+     text-align: left;
+  }
+.download{
+display: none;
+}
+.mobile-download a i{
+  display: block;
+  color: #f6f5f5;
+  font-size: 50px;
+}
+.sidebar-mobile-main-toggle i{
+  color: white;
+  float: right;
+}
+
+.nav > li > a:hover{
+  color: white;
+  background-color: transparent;
+}
+}
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # sidebar user
+ *
+ *  Styles for sidebar user
+ *
+ *  Version: 1.2
+ *  Latest update: 16/1/2021
+ vinay singh
+ *
+ * ---------------------------------------------------------------------------- */
+
+.sidebar-user{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+  .media .media-left{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .sidebar-user a img {
+    width: 56px!important;
+    height: 56px!important;
+    
+}
+
+
+
+ .sidebar-user .media-heading {
+    margin-bottom: 2px;
+    font-size:20px;
+}
+
+
+.text-size-mini{
+  font-size: 11px;
+}
+.text-size-small{
+  font-size: 12px;
+}
+.side_image{
+  margin-left: 11%;
+  margin-top: 5%;
+}
+@media (max-width: 768px){
+  .side_image{
+    display: none;
+  }
+
+}
+/* ------------------------------------------------------------------------------
+ *
+ *  # Sidebar layouts
+ *
+ *  Styles for sidebar components, main navigation and sidebar itself
+ *
+ *  Version: 1.2
+ *  Latest update: Nov 25, 2015
+ *
+ * ---------------------------------------------------------------------------- */
+.sidebar {
+  background-color: #37474F;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  display: none;
+}
+@media (min-width: 769px) {
+  .sidebar {
+    display: table-cell;
+    vertical-align: top;
+    width: 260px;
+  }
+}
+/*.sidebar-main {
+  z-index: 99;
+}
+.sidebar-secondary {
+  z-index: 98;
+}*/
+.sidebar-content {
+  position: relative;
+}
+.sidebar-all-hidden .sidebar-main,
+.sidebar-all-hidden .sidebar-secondary,
+.sidebar-main-hidden .sidebar-main,
+.sidebar-detached-hidden .sidebar-detached > .sidebar,
+.sidebar-secondary-hidden .sidebar-secondary {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sidebar-mobile-main .sidebar-main,
+  .sidebar-mobile-secondary .sidebar-secondary,
+  .sidebar-mobile-opposite .sidebar-opposite,
+  .sidebar-mobile-detached .sidebar-detached > .sidebar {
+    display: block;
+  }
+}
+
+.navigation {
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  position: relative;
+}
+
+.navigation .hidden-ul {
+  display: none;
+}
+.navigation li {
+  position: relative;
+}
+.navigation li + li {
+  margin-top: 1px;
+}
+.navigation li + .navigation-header {
+  margin-top: 10px;
+}
+.navigation li a {
+  color: #fff;
+  display: block;
+  -webkit-transition: background 0.15s linear, color 0.15s linear;
+  -o-transition: background 0.15s linear, color 0.15s linear;
+  transition: background 0.15s linear, color 0.15s linear;
+}
+.navigation li a:hover,
+.navigation li a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.navigation li a > i {
+  float: left;
+  top: 0;
+  margin-top: 2px;
+  margin-right: 15px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.navigation > li > a {
+  padding: 12px 20px;
+  min-height: 44px;
+  font-weight: 500;
+}
+.navigation > li.active > a,
+.navigation > li.active > a:hover,
+.navigation > li.active > a:focus {
+  background-color: #26A69A;
+  color: #fff;
+}
+.navigation > li.active > a > [class*=text-] {
+  color: #fff;
+}
+.navigation > li.active > a .label,
+.navigation > li.active > a .badge {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  -webkit-transition: background-color ease-in-out 0.2s;
+  -o-transition: background-color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
+}
+.navigation > li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.navigation > li ul li a {
+  padding: 10px 20px;
+  padding-left: 51px;
+  min-height: 40px;
+}
+.navigation > li ul .navigation-header {
+  padding-left: 51px;
+}
+.navigation > li > ul > li > ul > li > a,
+.navigation > li > ul > li > ul > .navigation-header {
+  padding-left: 71px;
+}
+.navigation > li > ul > li > ul > li > ul > li > a,
+.navigation > li > ul > li > ul > li > ul .navigation-header {
+  padding-left: 91px;
+}
+.navigation > li > ul li:first-child {
+  padding-top: 10px;
+}
+.navigation > li > ul li:last-child {
+  padding-bottom: 10px;
+}
+.navigation > li > ul li.active > a,
+.navigation > li > ul li.active > a:hover,
+.navigation > li > ul li.active > a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.navigation .navigation-header {
+  min-height: 30px;
+  padding: 10px 20px;
+  border-bottom: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.82;
+}
+.navigation .navigation-header > span {
+  display: block;
+  margin-top: 2px;
+}
+.navigation .navigation-header > i {
+  display: none;
+}
+.navigation .navigation-header > i.pull-right {
+  margin-top: 2px;
+}
+.navigation .navigation-header,
+.navigation .navigation-header a {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.navigation .navigation-header a:hover,
+.navigation .navigation-header a:focus {
+  color: #fff;
+}
+.navigation .navigation-header a i {
+  float: none;
+  margin: 0;
+}
+.navbar-nav {
+    margin: 6px 0px;
+}
+/* ------------------------------------------------------------------------------
+*
+*  # Main content layout
+*
+*  Styles for main structure of content area
+*
+*  Version: 1.0
+*  Latest update: May 25, 2015
+*
+* ---------------------------------------------------------------------------- */
+.page-container {
+  position: relative;
+  z-index: 9999;
+}
+@media (min-width: 769px) {
+  .page-container {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+@media (min-width: 769px) {
+  .page-content {
+    display: table-row;
+  }
+}
+.content-wrapper {
+  background-color: #f6f5f5;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .content-wrapper {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.page-header + .content {
+  padding-top: 0;
+}
+
+/*page heading*/
+.page-header {
+    padding-bottom: 0px;
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #eee;
+}
+/*--------------------------------------------------------------------------
+ * # home 
+ * style by vinay singh
+ ----------------------------------------------------------------------------*/
+
+
+
+.home{
+    display: table;
+    text-align: center;
+    padding: 0;
+    background-color: (0,0,0,0.3);
+    background-image: url("../images/home_background.jpg");
+    background-repeat: no-repeat; 
+    background-position: bottom center ;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 75vh;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+
+  animation: fadeInLeft;
+  animation-duration: 1s;
+
+
+}
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333333;
+    background: #fff;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+}
+.home .user_details p{
+  color: white;
+}
+.card-stats .card-header.card-header-icon, .card-stats .card-header.card-header-text {
+    text-align: right;
+}
+.card .card-header-warning .card-icon{
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+.card-stats .card-header.card-header-icon i {
+    font-size: 26px;
+    line-height: 36px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+}
+.card-icon {
+   border-radius: 3px;
+    background-color: #666666;
+    padding: 10px;
+    margin-top: -20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    float: left;
+}
+.card-category{
+  font-size: 15px;
+  color: #000;
+}
+
+
+
+/*
+withdraw*/
+.forms_field-label{
+  color: white;
+  
+}
+
+ 
+
+/*
+scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f6f5f5; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+
+
+
